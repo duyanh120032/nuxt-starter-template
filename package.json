@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .eslintignore .",
+    "lintfix": "eslint --fix --ext \".ts,.js,.vue\" --ignore-path .eslintignore ."
+  },
+  "devDependencies": {
+    "@headlessui/vue": "^1.6.7",
+    "@iconify/json": "^2.1.85",
+    "@intlify/nuxt3": "^0.2.3",
+    "@nuxt/content": "^2.0.1",
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/svg": "^0.4.0",
+    "@pinia/nuxt": "^0.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vueuse/nuxt": "^9.0.2",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "lint-staged": "^13.0.3",
+    "nuxt": "3.0.0-rc.6",
+    "nuxt-windicss": "^2.5.0",
+    "pinia": "^2.0.17",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.0",
+    "sass-loader": "^13.0.2",
+    "serve": "^14.0.1",
+    "typescript": "^4.7.4",
+    "unplugin-icons": "^0.14.8",
+    "unplugin-vue-components": "^0.21.2",
+    "vite-plugin-eslint": "^1.7.0"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,html,css,scss}": [
+      "yarn lintfix"
+    ]
+  }
+}
